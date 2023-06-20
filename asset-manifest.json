@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/http//:alantothe.github.io/react_port/static/css/main.db6dd80e.css",
+    "main.js": "/http//:alantothe.github.io/react_port/static/js/main.a17c6118.js",
+    "static/js/787.510e8dec.chunk.js": "/http//:alantothe.github.io/react_port/static/js/787.510e8dec.chunk.js",
+    "index.html": "/http//:alantothe.github.io/react_port/index.html",
+    "main.db6dd80e.css.map": "/http//:alantothe.github.io/react_port/static/css/main.db6dd80e.css.map",
+    "main.a17c6118.js.map": "/http//:alantothe.github.io/react_port/static/js/main.a17c6118.js.map",
+    "787.510e8dec.chunk.js.map": "/http//:alantothe.github.io/react_port/static/js/787.510e8dec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db6dd80e.css",
+    "static/js/main.a17c6118.js"
+  ]
+}
