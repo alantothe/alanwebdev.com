@@ -2,17 +2,16 @@ import React from 'react';
 
 function ResumeJSX() {
   return (
-    <div className="flex flex-row">
-      <div className="flex-sidebar bg-gray-200 p-4">
-        <img src="alan-photo.png" id="alan-photo" className="mb-4" />
-        <h4 id="name-side" className="text-xl font-semibold">RUBEN ALAN MALPARTIDA</h4>
-        <h4 id="job" className="text-lg text-gray-700">SOFTWARE ENGINEER</h4>
-        <hr id="line-side" className="my-4" />
-        <div className="contact-info">
-          <h4 id="contact-side" className="font-semibold mb-2">CONTACT INFO</h4>
-          <div id="icon-container">
-            {/* Icons */}
-            <div className="mb-2">
+    <div className="flex flex-row p-32 bg-black">
+      <div className="flex-none bg-coolgrey p-4 w-96 text-white h-screen ">
+        <img className="" src="https://res.cloudinary.com/dzjr3skhe/image/upload/v1687213143/alan_photos/alan-photo-pixelicious_iknzvi.png" alt="Alan" className="w-32 h-32 mb-4 rounded-full mx-auto" />
+        <h4 className="text-xl font-semibold text-center text-white">RUBEN ALAN MALPARTIDA</h4>
+        <h4 className="text-lg text-center text-yellow-200 font-bold">SOFTWARE ENGINEER</h4>
+        <hr className="my-4" />
+        <div>
+          <h4 className="font-semibold mb-2">CONTACT INFO</h4>
+          <div className="mb-2">
+            <div className="flex items-center">
               <p className="icon-p flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -30,8 +29,8 @@ function ResumeJSX() {
                 914-409-5117
               </p>
             </div>
-            <div className="mb-2">
-              <p className="icon-p flex items-center">
+            <div className="flex">
+              <p className="icon-p flex items-center mt-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-mail w-5 h-5 mr-2 text-gray-600"
@@ -145,47 +144,59 @@ function ResumeJSX() {
           </div>
         </div>
       </div>
-      <div className="flex-container-resume p-4">
-        <div>
-          <h1 className="catagories">SUMMARY</h1>
-          <p id="summary-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae aliquid ab tempore deleniti modi animi facere, laborum illum quis in quidem distinctio quod officia unde. Aspernatur eligendi architecto ipsam sint alias consequatur at modi magni in, accusantium iure voluptates eius possimus?
-          </p>
-        </div>
-        <hr />
-        <div>
-          <h2 className="catagories">Education</h2>
-        </div>
-        <div id="school-1">
-          <h3 className="school-position-">Air Force Community College - Supply Chain Management AS</h3>
-          <p id="date-location"> | January 2017 - January 2019 | Columbus, Ohio</p>
-        </div>
-        <div id="school-1">
-          <h3 className="school-position-">Code Immersives - Web Development Bootcamp</h3>
-          <p id="date-location"> | May 2022 - May 2023 | New York, New York</p>
-        </div>
-        <div>
-          <h2 className="catagories">Experience</h2>
-        </div>
-        <div>
-          <h3 className="school-position-">Procurement Manager ICBM Stock Control</h3>
-          <p id="date-location"> | July 2017 – January 2019 | Hampton Virginia</p>
-          <p id="position-duties">-Sustained and supported 45 launch control centers, 450 launch facilities and 399 ICBM's<br/>
-          -Preformed hands on inspections and coordinated maintenance actions for $1.3 billion in assets <br/>
-          -Consistently recognized as Top Performer in the department <br/>
-          -Awarded the highest honor the 341st Missile Wing can give, The Alpha Warrior  <br/>
-          -Act as the primary interface with suppliers on delivery status, issues and resolution. Escalate to commercial or technical partners when required. </p>
-        </div>
-        <div>
-          <h3 className="school-position-">Procurement Manager NEXRAD Radar Stock Control</h3>
-          <p id="date-location"> | February 2016 – July 2017 | | Norfolk Virginia</p>
-          <p id="position-duties">-Managed and oversaw NEXRAD Radar program, supported a fleet of 26 NEXRADs.<br/>
-          -Lead team meetings to monitor procurement operations and collaborate on solving problems.<br/>
-          -Conduct and coordinate procurement, receipt, distribution, tracking, and inventory management.<br/>
-          -Collaborate with the sales team to achieve sales targets<br/>
-          -Prepare sales reports and forecasts</p>
-        </div>
-      </div>
+
+      <div className="flex flex-col p-4 bg-white">
+
+<div>
+    <h1 className="text-3xl font-semibold uppercase my-4 ">SUMMARY</h1>
+    <p className="text-lg text-justify text-gray-700 font-raleway">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae aliquid ab tempore deleniti modi animi facere, laborum illum quis in quidem distinctio quod officia unde. Aspernatur eligendi architecto ipsam sint alias consequatur at modi magni in, accusantium iure voluptates eius possimus?
+    </p>
+</div>
+
+<hr className="border-black my-4" />
+
+<div>
+    <h2 className="text-2xl font-bold uppercase my-4">Education</h2>
+</div>
+
+<div className="py-1">
+    <h3 className="inline font-lato text-lg text-black font-bold leading-6">Air Force Community College - Supply Chain Management AS</h3>
+    <p className="inline font-lato text-gray-500 text-base leading-6"> | January 2017 - January 2019 | Columbus, Ohio</p>
+</div>
+
+<div className="py-1">
+    <h3 className="inline font-lato text-lg text-black font-bold leading-6">Code Immersives - Web Development Bootcamp</h3>
+    <p className="inline font-lato text-gray-500 text-base leading-6"> | May 2022 - May 2023 | New York, New York</p>
+</div>
+
+<div>
+    <h2 className="text-2xl font-bold uppercase my-4">Experience</h2>
+</div>
+
+<div>
+    <h3 className="font-lato text-lg text-black font-bold leading-6">Procurement Manager ICBM Stock Control</h3>
+    <p className="font-lato text-gray-500 text-base leading-6"> | July 2017 – January 2019 | Hampton Virginia</p>
+    <p className="py-1 font-lato text-gray-500 text-base leading-6">-Sustained and supported 45 launch control centers, 450 launch facilities and 399 ICBM's<br/>
+    -Preformed hands on inspections and coordinated maintenance actions for $1.3 billion in assets <br/>
+    -Consistently recognized as Top Performer in the department <br/>
+    -Awarded the highest honor the 341st Missile Wing can give, The Alpha Warrior  <br/>
+    -Act as the primary interface with suppliers on delivery status, issues and resolution. Escalate to commercial or technical partners when required. </p>
+</div>
+
+<div>
+    <h3 className="font-lato text-lg text-black font-bold leading-6">Procurement Manager NEXRAD Radar Stock Control</h3>
+    <p className="font-lato text-gray-500 text-base leading-6"> | February 2016 – July 2017 | | Norfolk Virginia</p>
+    <p className="py-1 font-lato text-gray-500 text-base leading-6">-Managed and oversaw NEXRAD Radar program, supported a fleet of 26 NEXRADs.<br/>
+    -Lead team meetings to monitor procurement operations and collaborate on solving problems.<br/>
+    -Conduct and coordinate procurement, receipt, distribution, tracking, and inventory management.<br/>
+    -Collaborate with the sales team to achieve sales targets<br/>
+    -Prepare sales reports and forecasts</p>
+</div>
+
+</div>
+
+
     </div>
   );
 }

@@ -10,7 +10,8 @@ module.exports = {
         'josefin': ['Josefin Sans', 'sans-serif']
       },
       colors: {
-        lightyellow: 'rgb(255,255,231)'
+        lightyellow: 'rgb(255,255,231)',
+        coolgrey: 'rgb(48,48,48)'
       }
     },
   },

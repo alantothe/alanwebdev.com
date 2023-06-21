@@ -46,8 +46,15 @@ function SvgContainer({parallaxRef}) {
     } else if (title === 'Twitter') {
       window.open('https://twitter.com/alanmalpartida_', '_blank');
     } else if (title === 'Resume') {
-      navigate('/resume');
+      window.open('https://alantothe.github.io/personal_website/resume/resume.html', '_blank');
     }
+     else if (title === 'Email') {
+      window.open('mailto:rubenamalpartida@gmail.com')
+    }
+
+
+
+
   };
 
 
