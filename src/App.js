@@ -1,8 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import './App.css';
-import Main from './components/Main/Main';
-import ResumeJSX from './components/Resume/ResumeJSX';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
+import Main from "./components/Main/Main";
+import ResumeJSX from "./components/Resume/ResumeJSX";
 
 function App() {
   return (
