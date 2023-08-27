@@ -41,7 +41,10 @@ function SvgContainer({ parallaxRef }) {
     } else if (title === "Twitter") {
       window.open("https://twitter.com/alanmalpartida_", "_blank");
     } else if (title === "Resume") {
-      window.open("", "_blank");
+      window.open(
+        "https://www.docdroid.net/GLqVtd1/ruben-alan-malpartida-pdf",
+        "_blank"
+      );
     } else if (title === "Email") {
       window.open("mailto:rubenamalpartida@gmail.com");
     }
