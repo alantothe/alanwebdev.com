@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { Parallax, ParallaxLayer, useScroll } from "@react-spring/parallax";
 import ParticlesBackground from "../ParticlesBackground/ParticlesBackground";
 import Alan from "../Page1/Alan";
 import SvgContainer from "../Page1/SvgContainer";
@@ -24,8 +24,8 @@ function Main() {
       <ParallaxLayer offset={1}>
         <MyProjects parallaxRef={parallaxRef} />
       </ParallaxLayer>
-      <ParallaxLayer offset={2}>
-        <AboutMe />
+      <ParallaxLayer offset={2} speed={0.05}>
+        <AboutMe parallaxRef={parallaxRef} />
       </ParallaxLayer>
     </Parallax>
   );

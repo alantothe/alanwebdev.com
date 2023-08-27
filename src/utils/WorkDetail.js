@@ -30,9 +30,9 @@ function WorkDetail({ projects }) {
             className="flex flex-col items-center border-2 w-98 mx-12 pt-10 border-yellow-100 bg-coolgrey drop-shadow-md"
           >
             <div className=" pb-8">{project.title}</div>
-            <div className="relative w-52 h-52 mx-10 rounded-full overflow-hidden">
+            <div className="relative w-64 h-full mx-0 overflow-hidden">
               <img
-                className="left-0 w-full h-full rounded-full drop-shadow-md"
+                className="left-0 w-full h-full  drop-shadow-md"
                 src={project.imageUrl}
                 alt={project.title}
               />

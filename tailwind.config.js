@@ -19,8 +19,10 @@ module.exports = {
           "100%": { opacity: 0 },
         },
       },
-      animation: {
-        arrow: "arrow 2s infinite",
+      animationDelay: {
+        500: "500ms",
+        1000: "1000ms",
+        1500: "1500ms",
       },
     },
   },
