@@ -23,35 +23,21 @@ function WorkDetail({ projects }) {
   };
   return (
     <div>
-      <div className="flex uppercase text-lightyellow font-bold">
+      <div className="flex uppercase text-lightyellow font-bold pt-10">
         {projects.map((project, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div
-              className="relative w-52 h-52 mx-10 rounded-full overflow-hidden"
-              onMouseEnter={() => setHoveredImage(index)}
-              onMouseLeave={() => setHoveredImage(null)}
-            >
+          <div
+            key={index}
+            className="flex flex-col items-center border-2 w-98 mx-12 pt-10 border-yellow-100 bg-coolgrey drop-shadow-md"
+          >
+            <div className=" pb-8">{project.title}</div>
+            <div className="relative w-52 h-52 mx-10 rounded-full overflow-hidden">
               <img
-                className="absolute top-0 left-0 w-full h-full rounded-full"
+                className="left-0 w-full h-full rounded-full drop-shadow-md"
                 src={project.imageUrl}
                 alt={project.title}
-                style={{
-                  filter: hoveredImage === index ? "none" : "blur(4px)",
-                  transition: "filter 0.3s",
-                }}
               />
-              <div className="absolute top-0 left-0 w-full h-full rounded-full flex items-center justify-center text-center text-white bg-black bg-opacity-50">
-                <span
-                  style={{
-                    opacity: hoveredImage === index ? 0 : 0.5,
-                    transition: "opacity 0.3s",
-                  }}
-                >
-                  {project.title}
-                </span>
-              </div>
             </div>
-            <div className="flex m-10 flex-col items-center">
+            <div className="flex mx-10 mt-10 flex-col items-center">
               <div className="flex ">
                 <a
                   className="flex m-4 w-14 h-14 justify-center"
@@ -85,15 +71,19 @@ function WorkDetail({ projects }) {
                   <Info />
                 </a>
               </div>
-              {hoveredIcons[index] === "github" && (
-                <h1 className="mx-2 text-center">{project.title} GitHub</h1>
-              )}
-              {hoveredIcons[index] === "www" && (
-                <h1 className="mx-2 text-center">{project.title} Link</h1>
-              )}
-              {hoveredIcons[index] === "infoLink" && (
-                <h1 className="mx-2 text-center">{project.title} Info</h1>
-              )}
+              <div className="m-0 p-0 h-16">
+                {hoveredIcons[index] === "github" && (
+                  <h1 className="mx-2 text-center h-10">
+                    {project.title} GitHub
+                  </h1>
+                )}
+                {hoveredIcons[index] === "www" && (
+                  <h1 className="mx-2 text-center">{project.title} Link</h1>
+                )}
+                {hoveredIcons[index] === "infoLink" && (
+                  <h1 className="mx-2 text-center">{project.title} Info</h1>
+                )}
+              </div>
             </div>
           </div>
         ))}

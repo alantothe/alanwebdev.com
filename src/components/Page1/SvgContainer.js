@@ -64,7 +64,7 @@ function SvgContainer({ parallaxRef }) {
         {svgs.map(({ id, title, Component }) => (
           <div
             key={id}
-            className="w-16 h-16"
+            className="w-16 h-16 cursor-pointer"
             onMouseEnter={() => handleMouseEnter(title)}
             onMouseLeave={handleMouseLeave}
             // You added an onClick handler here that calls handleClick with the title

@@ -1,19 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        'aboreto': "'Aboreto'",
-        'josefin': ['Josefin Sans', 'sans-serif']
+        aboreto: "'Aboreto'",
+        josefin: ["Josefin Sans", "sans-serif"],
       },
       colors: {
-        lightyellow: 'rgb(255,255,231)',
-        coolgrey: 'rgb(48,48,48)'
-      }
+        lightyellow: "rgb(255,255,231)",
+        coolgrey: "rgb(48,48,48)",
+      },
+      keyframes: {
+        arrow: {
+          "0%": { opacity: 0 },
+          "40%": { opacity: 1 },
+          "80%": { opacity: 0 },
+          "100%": { opacity: 0 },
+        },
+      },
+      animation: {
+        arrow: "arrow 2s infinite",
+      },
     },
   },
   plugins: [],
-}
+};

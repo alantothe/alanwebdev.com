@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 
-import GitHub from "../svg/github";
-import WorldWideWeb from "../svg/WorldWideWeb";
-import Info from "../svg/Info";
 import WorkDetail from "../../utils/WorkDetail";
+import { useSpring, config } from "react-spring";
 
-function MyProjects() {
+function MyProjects({ parallaxRef }) {
   const projects = [
     {
       imageUrl:
@@ -33,6 +31,19 @@ function MyProjects() {
     },
   ];
 
+  const animationProps = useSpring({
+    from: { opacity: 0, marginTop: 50 },
+    to: { opacity: 1, marginTop: 0 },
+    reset: true,
+    config: config.stiff,
+  });
+
+  const handleClick = () => {
+    if (parallaxRef && parallaxRef.current) {
+      parallaxRef.current.scrollTo(2);
+    }
+  };
+
   return (
     <div className="flex flex-col items-center">
       <h1 className="pt-32 text-lightyellow text-3xl font-bold uppercase">
@@ -40,6 +51,28 @@ function MyProjects() {
       </h1>
       <hr className="border-white w-72 m-10" />
       <WorkDetail projects={projects} />
+      <div
+        className=" mt-8 flex items-center justify-center"
+        onClick={() => handleClick()}
+      >
+        <div className="relative cursor-pointer">
+          <svg className="arrows w-10 h-12 absolute bottom-5 left-1/2 transform -translate-x-1/2">
+            <path
+              className="a1 stroke-[#FFFFE0] fill-transparent animate-arrow delay-1000"
+              d="M0 0 L20 20 L40 0"
+            ></path>
+            <path
+              className="a2 stroke-[#FFFFE0] fill-transparent animate-arrow delay-250"
+              d="M0 8 L20 28 L40 8"
+            ></path>
+            <path
+              className="a3 stroke-[#FFFFE0] fill-transparent animate-arrow"
+              d="M0 16 L20 36 L40 16"
+            ></path>
+          </svg>
+          <h1 className="text-[#FFFFE0] font-thin mt-16 text-center">Scroll</h1>
+        </div>
+      </div>
     </div>
   );
 }
