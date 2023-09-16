@@ -17,25 +17,25 @@ function MyProjects({ parallaxRef }) {
       imageUrl:
         "https://res.cloudinary.com/dzjr3skhe/image/upload/v1693146991/portfolio/68747470733a2f2f692e696d6775722e636f6d2f44516c487443422e706e67_kxske5.png",
       title: "Real Time Chat App",
-      githubUrl: "https://github.com/user/project2",
-      websiteUrl: "https://chatapp.alanwebdev2.com",
-      infoLink: "https://chatapp.alanwebdev2.com",
+      githubUrl: "https://github.com/alantothe/chat_app_client_next",
+      websiteUrl: "https://github.com/alantothe/chat_app_client_next",
+      infoLink: "https://github.com/alantothe/chat_app_client_next",
     },
     {
       imageUrl:
         "https://res.cloudinary.com/dzjr3skhe/image/upload/v1693147047/portfolio/Screen_Shot_2023-08-27_at_10.37.05_AM_fs8vot.png",
       title: "Wine E-commerce",
-      githubUrl: "https://github.com/user/project3",
-      websiteUrl: "https://chatapp.alanwebdev3.com",
-      infoLink: "https://chatapp.alanwebdev2.com",
+      githubUrl: "https://github.com/manfredjoa/wine-about-it-client",
+      websiteUrl: "https://wineaboutit.netlify.app/",
+      infoLink: "https://github.com/manfredjoa/wine-about-it-client",
     },
     {
       imageUrl:
-        "https://res.cloudinary.com/dzjr3skhe/image/upload/v1687049417/portfolio/Screen_Shot_2023-06-17_at_8.49.57_PM_ljy1ap.png",
-      title: "Blog Website",
-      githubUrl: "https://github.com/user/project3",
-      websiteUrl: "https://chatapp.alanwebdev3.com",
-      infoLink: "https://chatapp.alanwebdev2.com",
+        "https://res.cloudinary.com/dzjr3skhe/image/upload/v1694835384/Screen_Shot_2023-09-15_at_11.34.58_PM_euer9c.png",
+      title: "Social Media App",
+      githubUrl: "https://github.com/alantothe/you_and_meme_client",
+      websiteUrl: "https://youandmeme.netlify.app/",
+      infoLink: "https://github.com/alantothe/you_and_meme_client",
     },
   ];
 
