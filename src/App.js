@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/resume" element={<ResumeJSX />} />
+        
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>

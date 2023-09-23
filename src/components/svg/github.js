@@ -5,7 +5,7 @@ function GitHub({ onMouseEnter, onMouseLeave, className = "text-white" }) {
     <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`icon icon-tabler icon-tabler-brand-github w-12 mx-0.5 ${className}`}
+        className={`icon icon-tabler icon-tabler-brand-github w-12 mb-1 pb-1 ${className}`}
         width="100%"
         height="100%"
         viewBox="0 0 24 24"

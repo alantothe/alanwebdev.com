@@ -8,12 +8,16 @@ import Projects from "../svg/Projects";
 import Resume from "../svg/Resume";
 import Email from "../svg/Email";
 import { useNavigate } from "react-router-dom";
-
+import { ProjectsDialog } from "./components/ProjectsDialog";
+import AboutMe from "./components/AboutMe";
 function SvgContainer({ parallaxRef }) {
   const navigate = useNavigate();
-
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [dialogAbout, setDialogAboutOpen] = useState(false);
   const [currentTitle, setCurrentTitle] = useState("");
   const [key, setKey] = useState(0);
+  const toggleDialog = () => setDialogOpen((prev) => !prev);
+  const toggleAbout = () => setDialogAboutOpen((prev) => !prev);
 
   const animationProps = useSpring({
     from: { opacity: 0, marginTop: 50 },
@@ -34,40 +38,41 @@ function SvgContainer({ parallaxRef }) {
   };
 
   const handleClick = (title) => {
-    if (title === "Projects" && parallaxRef && parallaxRef.current) {
-      parallaxRef.current.scrollTo(1);
+    if (title === "Projects") {
+      toggleDialog();
     } else if (title === "GitHub") {
       window.open("https://github.com/alantothe", "_blank");
-    } else if (title === "Twitter") {
-      window.open("https://twitter.com/alanmalpartida_", "_blank");
+    } else if (title === "Linkedin") {
+      window.open("https://www.linkedin.com/in/alan-malpartida", "_blank");
     } else if (title === "Resume") {
       window.open(
         "https://www.docdroid.net/GLqVtd1/ruben-alan-malpartida-pdf",
         "_blank"
       );
-    } else if (title === "Email") {
-      window.open("mailto:rubenamalpartida@gmail.com");
+    } else if (title === "About Me") {
+      toggleAbout();
     }
   };
 
   const svgs = [
     { id: 1, title: "GitHub", Component: GitHub },
-    { id: 2, title: "Twitter", Component: Twitter },
+    { id: 2, title: "Linkedin", Component: Twitter },
     { id: 3, title: "Projects", Component: Projects },
     { id: 4, title: "Resume", Component: Resume },
-    { id: 5, title: "Email", Component: Email },
+    { id: 5, title: "About Me", Component: Email },
   ];
 
   return (
     <div>
-      <div className="flex justify-center p-2" id="icon-container">
+      <div className="flex justify-center ">
+        <ProjectsDialog open={dialogOpen} toggleDialog={toggleDialog} />
+        <AboutMe open={dialogAbout} toggleAbout={toggleAbout} />
         {svgs.map(({ id, title, Component }) => (
           <div
             key={id}
             className="w-16 h-16 cursor-pointer"
             onMouseEnter={() => handleMouseEnter(title)}
             onMouseLeave={handleMouseLeave}
-            // You added an onClick handler here that calls handleClick with the title
             onClick={() => handleClick(title)}
           >
             <div className="p-2">

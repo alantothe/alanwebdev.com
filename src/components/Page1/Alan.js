@@ -5,7 +5,7 @@ function Alan() {
     <div>
       <div className="flex flex-col items-center pt-32" id="images">
         <h1
-          className="flex justify-center text-white text-6xl font-sans uppercase tracking-wider leading-7 mt-12 mb-6 font-josefin "
+          className="flex justify-center text-white text-7xl xs:text-4xl uppercase tracking-wider leading-7 mt-12 mb-6 font-josefin" // Adjust font size at 500px breakpoint
           id="name"
         >
           Alan Malpartida
@@ -16,9 +16,9 @@ function Alan() {
         >
           Full-Stack Web Developer
         </h2>
-        <div className="w-60  rounded-full flex justify-center items-center">
+        <div className="w-60 rounded-full flex justify-center items-center">
           <img
-            className="bg-lightyellow rounded-full "
+            className="bg-lightyellow rounded-full"
             src="https://res.cloudinary.com/dzjr3skhe/image/upload/v1687213143/alan_photos/alan-photo-pixelicious_iknzvi.png"
             alt="Alan's photo"
           />
