@@ -46,7 +46,7 @@ function SvgContainer({ parallaxRef }) {
       window.open("https://www.linkedin.com/in/alan-malpartida", "_blank");
     } else if (title === "Resume") {
       window.open(
-        "https://www.docdroid.net/GLqVtd1/ruben-alan-malpartida-pdf",
+        "https://www.docdroid.net/whZuGCu/ruben-alan-malpartida-pdf",
         "_blank"
       );
     } else if (title === "About Me") {
