@@ -1,17 +1,13 @@
-import React from "react";
-
 import { useState } from "react";
 import { useSpring, animated, config } from "react-spring";
-import GitHub from "../svg/github";
-import Twitter from "../svg/Twitter";
-import Projects from "../svg/Projects";
-import Resume from "../svg/Resume";
-import Email from "../svg/Email";
-import { useNavigate } from "react-router-dom";
 import { ProjectsDialog } from "./components/ProjectsDialog";
+import GitHub from "./svg/GitHub.js";
+import Linkedin from "./svg/Linkedin.js";
+import Projects from "./svg/Projects";
+import Resume from "./svg/Resume.js";
+import About from "./svg/About.js";
 import AboutMe from "./components/AboutMe";
-function SvgContainer({ parallaxRef }) {
-  const navigate = useNavigate();
+function SvgContainer() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [dialogAbout, setDialogAboutOpen] = useState(false);
   const [currentTitle, setCurrentTitle] = useState("");
@@ -56,10 +52,10 @@ function SvgContainer({ parallaxRef }) {
 
   const svgs = [
     { id: 1, title: "GitHub", Component: GitHub },
-    { id: 2, title: "Linkedin", Component: Twitter },
+    { id: 2, title: "Linkedin", Component: Linkedin },
     { id: 3, title: "Projects", Component: Projects },
     { id: 4, title: "Resume", Component: Resume },
-    { id: 5, title: "About Me", Component: Email },
+    { id: 5, title: "About Me", Component: About },
   ];
 
   return (

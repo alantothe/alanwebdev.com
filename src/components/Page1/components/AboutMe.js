@@ -6,7 +6,7 @@ import {
   DialogFooter,
   Typography,
 } from "@material-tailwind/react";
-import aboutme from "../../svg/aboutme.svg";
+import aboutme from "../svg/aboutme.svg";
 
 export function AboutMe({ open, toggleAbout }) {
   return (
@@ -14,24 +14,24 @@ export function AboutMe({ open, toggleAbout }) {
       <Dialog className="" size={"lg"} open={open} handler={toggleAbout}>
         <DialogBody className="border-none flex-col" divider>
           <img
-            className="float-left mr-5 mb-4 w-70"
+            className="float-left mr-5 mb-4 w-62 pt-20"
             src={aboutme}
             alt="About Me"
           />
           <Typography className=" text-3xl font bold font-bold mb-12 mt-4 ">
             About Me
           </Typography>
-          <Typography className="justify-center">
-            Transitioning from a background in Procurement Management, including
-            a pivotal role in the Air Force ICBM program, to the dynamic world
-            of Full-Stack Web Development, I seamlessly blend strategic insight
-            with my growing technical skills. My expanding portfolio stands as a
-            testament to my determination, swift learning curve, and
-            versatility. Drawing upon my rich logistics and defense experience,
-            I am poised to craft tech solutions that not only resonate with user
-            requirements but also dovetail with business objectives. I am eager
-            to carve a distinctive niche in the tech arena. If you wish to
-            contact me, please view my Resume for my contact information.
+          <Typography className="justify-center text-black pb-20">
+            Full Stack Software Developer with over a year of hands-on coding
+            experience, combined with a background in supply chain management
+            and procurement in the United States Air Force. I transitioned from
+            logistical operations to software development with great enthusiasm.
+            I am adept at developing and implementing comprehensive software
+            solutions that drive efficiency, and deliver tangible, impactful
+            results. My Air Force experience imbued me with discipline,
+            teamwork, and the vital ability to operate under pressure, qualities
+            that I now channel into every software project I passionately
+            undertake.
           </Typography>
         </DialogBody>
       </Dialog>

@@ -137,21 +137,21 @@ export function ProjectsDialog({ open, toggleDialog }) {
                   </a>
                 </div>
                 <p className="flex grow items-center text-sm mt-2">
-                  Around week 9 of our 12-week Software Engineering Immersive at
-                  General Assembly, my team and I launched "Wine About It".
-                  Teaming up with three other developers, I initially took
-                  charge of the backend architecture, crafting a solid and
-                  efficient foundation. Upon completion of the backend, my focus
-                  transitioned to assets the team on the front end. It was here
-                  that I trained and led the team in integrating advanced
-                  technologies such as Redux and Tailwind CSS, ensuring a modern
-                  and responsive user interface. Our MERN (MongoDB, Express,
-                  React, Node) stack-based ecommerce application stands out with
-                  its image carousels on the landing page. Users can
-                  effortlessly sign up, peruse wines alphabetically, by type or
-                  by price range, mark wines as favorites, fill their carts, and
-                  proceed to purchase. An added convenience is the ability for
-                  users to revisit and review their order details post-purchase.
+                  Around week 9 of 12 at General Assembly, my team and I
+                  launched "Wine About It". Teaming up with three other
+                  developers, I initially took charge of the backend
+                  architecture, crafting a solid and efficient foundation. Upon
+                  completion of the backend, my focus transitioned to assets the
+                  team on the front end. It was here that I trained and led the
+                  team in integrating advanced technologies such as Redux and
+                  Tailwind CSS, ensuring a modern and responsive user interface.
+                  Our MERN (MongoDB, Express, React, Node) stack-based ecommerce
+                  application stands out with its image carousels on the landing
+                  page. Users can effortlessly sign up, peruse wines
+                  alphabetically, by type or by price range, mark wines as
+                  favorites, fill their carts, and proceed to purchase. An added
+                  convenience is the ability for users to revisit and review
+                  their order details post-purchase.
                   {/* Beyond
                   the core features, we've expanded the application with
                   enhancements such as a responsive search bar, handpicked food
@@ -233,7 +233,7 @@ export function ProjectsDialog({ open, toggleDialog }) {
             <div className="flex gap-8">
               <div className="flex flex-col w-1/4 gap-4">
                 <a
-                  href="https://manfredjoa.github.io/hangman/"
+                  href="https://alantothe.github.io/Blackjack_OOP/"
                   target="_blank"
                   className="outline-none"
                 >
@@ -254,14 +254,14 @@ export function ProjectsDialog({ open, toggleDialog }) {
                   style={{ color: "rgb(102, 101, 171)" }}
                 >
                   <a
-                    href="https://manfredjoa.github.io/hangman/"
+                    href="https://alantothe.github.io/Blackjack_OOP/"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >
                     Deployed App
                   </a>
                   <a
-                    href="https://github.com/manfredjoa/hangman"
+                    href="https://github.com/alantothe/Blackjack_OOP"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >

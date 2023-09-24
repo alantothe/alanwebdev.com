@@ -37,7 +37,7 @@ module.exports = withMT({
         josefin: ["Josefin Sans", "sans-serif"],
       },
       screens: {
-        xs: "300px",
+        "max-xs": { max: "420px" },
       },
       colors: {
         lightyellow: "rgb(255,255,231)",
@@ -56,5 +56,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 });

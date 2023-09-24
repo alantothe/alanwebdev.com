@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import Main from "./components/Main/Main";
-import ResumeJSX from "./components/Resume/ResumeJSX";
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
-        
+
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router>
