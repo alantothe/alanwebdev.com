@@ -44,21 +44,21 @@ export function ProjectsDialog({ open, toggleDialog }) {
                   style={{ color: "rgb(102, 101, 171)" }}
                 >
                   <a
-                    href="https://wineaboutit.netlify.app/"
+                    href="https://chat.alanwebdev.com/"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >
                     Deployed App
                   </a>
                   <a
-                    href="https://github.com/manfredjoa/wine-about-it-client"
+                    href="https://github.com/alantothe/chat_app_client_next"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >
                     GitHub Client Repository
                   </a>
                   <a
-                    href="https://github.com/manfredjoa/wine-about-it-server"
+                    href="https://github.com/alantothe/chat_app_server"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >
