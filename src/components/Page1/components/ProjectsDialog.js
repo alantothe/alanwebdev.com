@@ -9,7 +9,13 @@ import {
 export function ProjectsDialog({ open, toggleDialog }) {
   return (
     <>
-      <Dialog divider={false} open={open} size={"xl"} handler={toggleDialog}>
+      <Dialog
+        divider={false}
+        open={open}
+        size={"xl"}
+        handler={toggleDialog}
+        className=""
+      >
         {/* <DialogHeader className="h-20 bg-zinc-700">
           Its a simple dialog.
         </DialogHeader> */}
@@ -20,20 +26,20 @@ export function ProjectsDialog({ open, toggleDialog }) {
               fontFamily: "'Sudbury Book', sans-serif",
             }}
           >
-            <div className="flex gap-8">
-              <div className="flex flex-col w-1/4 gap-4">
+            <div className="flex flex-col sm:flex-col md:flex-row lg:flex-row gap-8 items-center sm:items-center md:items-start lg:items-start">
+              <div className="flex flex-col w-3/4 sm:w-3/4 md:w-1/4 lg:w-1/4 gap-4">
                 <a
                   href="https://chat.alanwebdev.com/"
                   target="_blank"
                   className="outline-none"
                 >
-                  <h1 className="text-center text-xl hover:opacity-50">
-                    Real Time Chat App
+                  <h1 className="text-center text-2xl sm:text-2xl md:text-xl lg:text-xl hover:opacity-50 w-full">
+                    Chat App
                   </h1>
                   <img
                     src="https://res.cloudinary.com/dzjr3skhe/image/upload/v1695398677/Screen_Shot_2023-09-22_at_12.04.24_PM_zqyblg.png"
                     alt="Wine About It"
-                    className="cursor-pointer hover:opacity-50 object-contain"
+                    className="cursor-pointer hover:opacity-50 object-contain w-full"
                   ></img>
                 </a>
               </div>
@@ -92,18 +98,18 @@ export function ProjectsDialog({ open, toggleDialog }) {
               style={{ backgroundColor: "rgb(102, 101, 171)", height: "2px" }}
             ></hr>
             <div className="flex gap-8">
-              <div className="flex flex-col w-1/4 gap-4">
+              <div className="flex flex-col w-3/4 sm:w-3/4 md:w-1/4 lg:w-1/4 gap-4">
                 <a
-                  href="https://wineaboutit.netlify.app/"
+                  href="https://vino.alanwebdev.com"
                   target="_blank"
                   className="outline-none"
                 >
-                  <h1 className="text-center text-xl hover:opacity-50">
-                    Wine About It
+                  <h1 className="text-center text-2xl sm:text-2xl md:text-xl lg:text-xl hover:opacity-50 w-full">
+                    Le Vino
                   </h1>
                   <img
                     src="https://res.cloudinary.com/doqgufzuq/image/upload/v1694204829/Portfolio/Projects/Wine%20About%20It.png"
-                    alt="Wine About It"
+                    alt="Le Vino"
                     className="cursor-pointer hover:opacity-50 object-contain"
                   ></img>
                 </a>
@@ -115,21 +121,21 @@ export function ProjectsDialog({ open, toggleDialog }) {
                   style={{ color: "rgb(102, 101, 171)" }}
                 >
                   <a
-                    href="https://wineaboutit.netlify.app/"
+                    href="https://vino.alanwebdev.com"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >
                     Deployed App
                   </a>
                   <a
-                    href="https://github.com/manfredjoa/wine-about-it-client"
+                    href="https://github.com/alantothe/wine-about-it-personal-client"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >
                     GitHub Client Repository
                   </a>
                   <a
-                    href="https://github.com/manfredjoa/wine-about-it-server"
+                    href="https://github.com/alantothe/wine-about-it-personal-server"
                     target="_blank"
                     className="text-center cursor-pointer hover:opacity-50"
                   >
@@ -165,13 +171,13 @@ export function ProjectsDialog({ open, toggleDialog }) {
             ></hr>
 
             <div className="flex gap-8">
-              <div className="flex flex-col w-1/4 gap-4">
+              <div className="flex flex-col w-3/4 sm:w-3/4 md:w-1/4 lg:w-1/4 gap-4">
                 <a
                   href="https://youandmeme.netlify.app/"
                   target="_blank"
                   className="outline-none"
                 >
-                  <h1 className="text-center text-xl hover:opacity-50">
+                  <h1 className="text-center text-2xl sm:text-2xl md:text-xl lg:text-xl hover:opacity-50 w-full">
                     You & Meme
                   </h1>
                   <img
@@ -222,68 +228,6 @@ export function ProjectsDialog({ open, toggleDialog }) {
                   custom text on a wide array of meme templates. The platform
                   provides a seamless navigation experience with a home page,
                   detailed post views, and user profiles.
-                </p>
-              </div>
-            </div>
-
-            <hr
-              style={{ backgroundColor: "rgb(102, 101, 171)", height: "2px" }}
-            ></hr>
-
-            <div className="flex gap-8">
-              <div className="flex flex-col w-1/4 gap-4">
-                <a
-                  href="https://alantothe.github.io/Blackjack_OOP/"
-                  target="_blank"
-                  className="outline-none"
-                >
-                  <h1 className="text-center text-xl hover:opacity-50">
-                    Blackjack
-                  </h1>
-                  <img
-                    src="https://res.cloudinary.com/dzjr3skhe/image/upload/v1695398983/Screen_Shot_2023-09-22_at_10.00.19_AM_pesrpu.png"
-                    alt="Hangman"
-                    className="cursor-pointer hover:opacity-50 object-contain"
-                  ></img>
-                </a>
-              </div>
-
-              <div className="flex flex-col w-3/4 mr-4">
-                <div
-                  className="flex justify-between text-sm mobile:text-xs"
-                  style={{ color: "rgb(102, 101, 171)" }}
-                >
-                  <a
-                    href="https://alantothe.github.io/Blackjack_OOP/"
-                    target="_blank"
-                    className="text-center cursor-pointer hover:opacity-50"
-                  >
-                    Deployed App
-                  </a>
-                  <a
-                    href="https://github.com/alantothe/Blackjack_OOP"
-                    target="_blank"
-                    className="text-center cursor-pointer hover:opacity-50"
-                  >
-                    GitHub Client Repository
-                  </a>
-                  <a className="invisible">GitHub Server Repository</a>
-                </div>
-                <p className="flex grow items-center text-sm mt-2">
-                  In one of the initial assignments at General Assembly, I took
-                  on the challenge of developing a browser-centric Blackjack
-                  game. The game's core was structured around JavaScript's
-                  Object-Oriented Programming (OOP), ensuring flexibility and
-                  modularity. With a foundation in HTML, I delivered a clean,
-                  user-friendly interface. Meanwhile, CSS was utilized to bring
-                  a simple yet engaging visual touch. Key features, such as a
-                  comprehensive betting system, visual card representations, and
-                  interactive buttons guide players through their decisions,
-                  from placing bets to hitting or standing. Diving deeper into
-                  the code, meticulous algorithms were developed to faithfully
-                  replicate traditional Blackjack rules, ensuring that the card
-                  values, dealer behaviors, and game outcomes echoed the
-                  authenticity of the casino classic.
                 </p>
               </div>
             </div>
